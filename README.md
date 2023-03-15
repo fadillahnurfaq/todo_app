@@ -2,8 +2,11 @@
 
 Aplikasi todo list menggunakan state management valuenotifier
 
+## Referensi Design
+https://www.figma.com/file/wfwM9m6R8EyetxbAVUleSd/Learn-UIUX-%3A-To-Do-List-App-(Community)?node-id=5%3A2621&t=axIO9QrX6dtGSkEm-1
+
 ## Detail Aplikasi
-Link Aplikasi : https://drive.google.com/file/d/1XhCLVG9pavpm1v33YQ_xKfy2AeiBhNDq/view
+Link Aplikasi : https://drive.google.com/file/d/1m_yEfiCLAUMO18fs1ok1ZRxImbVeaDb4/view
 
 ## Detail Aplikasi
 
