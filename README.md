@@ -2,6 +2,10 @@
 
 Aplikasi todo list menggunakan state management valuenotifier
 
+## Username Dan Password
+Username : todo1
+Password : todo123
+
 ## Referensi Design
 https://www.figma.com/file/wfwM9m6R8EyetxbAVUleSd/Learn-UIUX-%3A-To-Do-List-App-(Community)?node-id=5%3A2621&t=axIO9QrX6dtGSkEm-1
 
