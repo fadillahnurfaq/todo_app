@@ -3,6 +3,9 @@
 Aplikasi todo list menggunakan state management valuenotifier
 
 ## Detail Aplikasi
+Link Aplikasi : https://drive.google.com/file/d/1XhCLVG9pavpm1v33YQ_xKfy2AeiBhNDq/view
+
+## Detail Aplikasi
 
 ![detail 1](ss/f1.png)
 
