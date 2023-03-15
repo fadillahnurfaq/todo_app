@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:todo_app/utils/show_loading.dart';
+import 'package:todo_app/utils/validator/validator.dart';
 
 import '../../db/todo_db.dart';
 import '../../models/todo_model.dart';
@@ -117,6 +118,7 @@ class EditController extends ChangeNotifier {
                       hint: "Design Logo",
                       controller: titleController,
                       value: data.title,
+                      validator: Validator.required,
                     ),
                     const SizedBox(
                       height: 10.0,
@@ -124,6 +126,7 @@ class EditController extends ChangeNotifier {
                     QTextField(
                       hint: "Description",
                       controller: descriptionController,
+                      validator: Validator.required,
                       value: data.description,
                       textInputType: TextInputType.multiline,
                       textInputAction: TextInputAction.newline,
@@ -175,8 +178,12 @@ class EditController extends ChangeNotifier {
                           ),
                         ),
                         onPressed: () async {
-                          await edit(data);
-                          Get.off(page: const HomeView());
+                          if (!formState.currentState!.validate()) {
+                            return;
+                          } else {
+                            await edit(data);
+                            Get.off(page: const HomeView());
+                          }
                         },
                         child: Text(
                           "Edit Todo",
